@@ -1,8 +1,7 @@
-#1
 import cv2
 
-img = cv2.imread("C:\\Users\\ghant\\OneDrive\\Desktop\\me.jpg")
+img = cv2.imread('C:\\Users\\ghant\\OneDrive\\Desktop\\shin.jpg')
 
-blur_img = cv2.GaussianBlur(img,(5,5),0)     
+gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-cv2.imwrite('blur_image.jpg',blur_img)
+cv2.imwrite('gray_image.jpg', gray_img)
